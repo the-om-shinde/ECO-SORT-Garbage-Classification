@@ -12,7 +12,7 @@ ctk.set_appearance_mode("Dark")
 ctk.set_default_color_theme("green")
 
 ASSETS_PATH = os.path.join(os.path.dirname(os.path.realpath(__file__)), "assets")
-MODEL_PATH = "garbage_project/train_run/weights/best.pt"
+MODEL_PATH = "model/best.pt"
 
 COLORS = {
     "primary": "#00E676",
@@ -427,7 +427,7 @@ class App(ctk.CTk):
 
     def toggle_cam(self):
         if not self.camera_running:
-            self.cap = cv2.VideoCapture(0)
+            self.cap = cv2.VideoCapture(1)
             if not self.cap.isOpened():
                 messagebox.showerror("Error", "Cannot open camera")
                 return
