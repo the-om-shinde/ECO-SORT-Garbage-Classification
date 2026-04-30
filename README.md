@@ -113,12 +113,12 @@ python main.py
 
 ---
 
-##  Detection Result
+## Sample Output
 
 <p align="center">
-  <img src="images/detection.png" width="700">
+  <img src="images/output.png" width="700"><br>
+  <b>Real-time garbage detection using YOLO (Paper detected with 89% confidence)</b>
 </p>
-
 ---
 
 
